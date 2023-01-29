@@ -1,20 +1,13 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("HR67 Hub","BloodTheme")
+local Window = Library.CreateLib("Bronxshootout Hub","BloodTheme")
     -- MAIN
     local Main = Window:NewTab("Main")
     local MainSection = Main:NewSection("Main")
 
-
-    MainSection:NewButton("Back/Front Flip", "Makes you do gymnastics", function()
-        loadstring(game:HttpGet('https://pastebin.com/raw/7wDcPtLk'))()
-    end)
-
-    MainSection:NewToggle("Super-Human", "go fast and jump high", function(state)
+    MainSection:NewToggle("High-Jump", "jump high", function(state)
         if state then
-            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 120
             game.Players.LocalPlayer.Character.Humanoid.JumpPower = 120
         else
-            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
             game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
         end
     end)
@@ -46,15 +39,12 @@ local Window = Library.CreateLib("HR67 Hub","BloodTheme")
 
 
     --Other
-    local Other = Window:NewTab("Other")
-    local OtherSection = Other:NewSection("Other")
+    local Other = Window:NewTab("Admin")
+    local OtherSection = Other:NewSection("Admin")
 
     OtherSection:NewButton("Chat Spoofer", "Lets you chat for other people", function()
         loadstring(game:HttpGet(('https://pastebin.com/raw/87qkzSng'),true))()
     end)
 
-    OtherSection:NewButton("Bypassed Fly", "bird mode", function()
-        loadstring(game:HttpGet("https://pastebin.com/raw/cg3ZtBAm"))() 
-
-        Fly(true)
     end)
+
