@@ -23,6 +23,9 @@ local Window = Library.CreateLib("HR67 Hub","BloodTheme")
         loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
     end)
 
+ MainSection:NewButton("CMD-X", "CMD_X Admin Commands", function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source'),true))()
+    end)
 
     --LOCAL PLAYER
     local Player = Window:NewTab("Player")
